@@ -1,13 +1,11 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-    basePath: process.env.NODE_ENV === 'production' ? '/Studio-Pill' : '',
-    assetPrefix: process.env.NODE_ENV === 'production' ? '/Studio-Pill/' : '',
+const isProd = process.env.NODE_ENV === 'production';
+
+module.exports = {
+    basePath: isProd ? '/Studio-Pill' : '',
+    assetPrefix: isProd ? 'https://studiopill.com/' : '',
     images: {
-      loader: 'akamai',
-      path: process.env.NODE_ENV === 'production' ? '/Studio-Pill/' : '/',
+        loader: 'imgix',
+        path: 'https://studiopill.com/',
     },
-    output: 'export',
-  };
-  
-  export default nextConfig;
-  
+    output: 'export'
+};
