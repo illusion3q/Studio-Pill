@@ -1,11 +1,13 @@
-const isProd = process.env.NODE_ENV === 'production';
-
-module.exports = {
-    basePath: isProd ? '/Studio-Pill' : '',
-    assetPrefix: isProd ? 'https://studiopill.com/' : '',
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    basePath: process.env.NODE_ENV === 'production' ? '/Studio-Pill' : '',
+    assetPrefix: process.env.NODE_ENV === 'production' ? 'https://studiopill.com/' : '',
     images: {
-        loader: 'imgix',
-        path: 'https://studiopill.com/',
+      loader: 'akamai',
+      path: process.env.NODE_ENV === 'production' ? 'https://studiopill.com/' : '/',
     },
-    output: 'export'
-};
+    output: 'export',
+  };
+  
+  export default nextConfig;
+  
