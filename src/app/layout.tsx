@@ -5,12 +5,13 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Studio Pill",
+  title: "studio pill",
   description: "Work in progress",
   icons: {
     icon: [
       { rel: "icon", url: "/android-chrome-192x192.png", sizes: "192x192", type: "image/png" },
       { rel: "icon", url: "/android-chrome-512x512.png", sizes: "512x512", type: "image/png" },
+      { rel: "apple-touch-icon", url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }
     ],
     shortcut: { url: "/favicon.ico" }
   },
