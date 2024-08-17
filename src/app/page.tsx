@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Montserrat } from "next/font/google";
 import ImageGallery from "@/app/ImageGallery";
 
-const montserrat = Montserrat({ subsets: ["latin"], weight: ["600"] });
+const montserrat = Montserrat({ subsets: ["latin"], weight: ["400"] });
 
 export default function Home() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,11 +37,11 @@ export default function Home() {
 
                 <div className="hidden lg:flex flex-row gap-5">
                     <p className={montserrat.className}>architecture</p>
-                    <p>-</p>
-                    <p className={montserrat.className}>design</p>
-                    <p>-</p>
+                    <p className={montserrat.className}>-</p>
+                    <p className={montserrat.className}>interior</p>
+                    <p className={montserrat.className}>-</p>
                     <p className={montserrat.className}>about</p>
-                    <p>-</p>
+                    <p className={montserrat.className}>-</p>
                     <p className={montserrat.className}>contact</p>
                 </div>
 
@@ -61,7 +61,7 @@ export default function Home() {
             {isMenuOpen && (
                 <div className="lg:hidden flex flex-col gap-4 mt-4 mx-auto">
                     <p className={montserrat.className}>architecture</p>
-                    <p className={montserrat.className}>design</p>
+                    <p className={montserrat.className}>interior</p>
                     <p className={montserrat.className}>about</p>
                     <p className={montserrat.className}>contact</p>
                 </div>
