@@ -13,7 +13,7 @@ export default function Home() {
         { src: '/1.png', alt: 'Project 1' },
         { src: '/2.png', alt: 'Project 2' },
         { src: '/3.png', alt: 'Project 3' },
-        { src: '/4.png', alt: 'Project 4' },
+        { src: '/7.png', alt: 'Project 4' },
         { src: '/5.png', alt: 'Project 5' },
         { src: '/6.png', alt: 'Project 6' },
     ];
