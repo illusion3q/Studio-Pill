@@ -50,7 +50,7 @@ export default function Home() {
                     onClick={toggleMenu}
                 >
                     <Image
-                        src="/menu-icon.svg"
+                        src={isMenuOpen ? '/menu-close.svg' : '/menu-icon.svg'}
                         alt="Menu"
                         width={24}
                         height={24}
