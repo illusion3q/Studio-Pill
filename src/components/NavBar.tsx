@@ -32,6 +32,10 @@ export default function NavBar() {
             <p className={montserrat.className}>architecture</p>
           </Link>
           <p className={montserrat.className}>-</p>
+          <Link href={"/visualising"}>
+            <p className={montserrat.className}>visualising</p>
+          </Link>
+          <p className={montserrat.className}>-</p>
           <Link href={"/interior"}>
             <p className={montserrat.className}>interior</p>
           </Link>
